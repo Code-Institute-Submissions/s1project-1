@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="UTF-8">
+      <title>Form</title>
+      <link href="https://fonts.googleapis.com/css?family=Keania+One" rel="stylesheet">
+   
+      <!--
+         Form with HTML5 tags and basic CSS
+      -->
+      <style type="text/css">
+
+      body{
+         font-family: 'Keania One', cursive;
+      }
+         #container{
+            width: 550px;
+            margin: auto;
+	
+
+         }
+
+         legend{
+            font-size: 30px;
+            background-color: rgb(255, 128, 0);
+            border-radius: 5px;
+            border: 1px solid #999;
+            padding: 4px 15px;
+         }
+            
+         label.field{
+            display: block;
+            text-align: right;
+            width: 100px;
+            float: left;
+            clear: both;
+
+         }
+         input{
+            width: 200px;
+            border-radius: 5px;
+            padding: 6px 8px;
+         }
+         .field{
+            padding: 6px 8px;
+         }
+
+         #currency{
+             width: 220px;
+             border-radius: 5px;
+             padding: 6px 8px;
+         }
+
+         fieldset{
+            width: 450px;
+            border: 1px solid #999;
+            border-radius: 20px;
+            clear: both;
+            padding: 20px;
+            margin-bottom: 100px;
+            background-color:rgb(255, 191, 0);
+         }
+         
+         input:focus{
+            background-color:lemonchiffon;
+         }
+         
+         .check {
+            width:50px;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="container">
+         <form>
+            <fieldset>
+               <fieldset>
+                  <legend>Details</legend>
+                     <label for="FirstName" class="field">FirstName</label>
+                        <input id="FirstName" required="" type="text" name="FirstName" placeholder="FirstName"/>
+                     
+                     <label for="Email" class="field">Email</label>
+                        <input id="Email" required="" type="email" name="Email" autofocus placeholder="Email"/>
+                     
+                     <label for="PhoneNumber" class="field">PhoneNumber</label>
+                        <input id="PhoneNumber" pattern="08[3-9]{1}[0-9]{7}" type="text" name="PhoneNumber" placeholder="PhoneNumber"/>
+                     
+                     <label for="PassportNumber" class="field">Passport Number</label>
+                        <input id="PassportNumber"pattern=P[A-Z]{1}[0-9]{7} type="PassportNumber" name="PassportNumber" placeholder="PassportNumber"/>
+
+                     <label for="D.O.B" class="field">D.O.B</label>
+                        <input id="D.O.B" type="date" name="D.O.B" placeholder="D.O.B"/>
+                     
+                     <label for="submit" class="field">Submit</label>
+                        <input id="submit" type="submit" name="submit"/>
+               </fieldset>
+               <fieldset id="Gender">
+                        <label for="Gender" class="radio">Gender</label>
+                        <label><input type="radio" name="Gender" value="Male">Male</label>
+                        <label><input type="radio" name="Gender" value="Female">Female</label>
+                        <label><input type="radio" name="Gender" value="Other">Other</label>
+               </fieldset>
+               <fieldset id="Vehicle preference">
+                  <label for="Would you like" class="checkbox">Vehicle preference
+                     <label><input type="checkbox" class="check" name="Vehicle preference" value="4x4"/>4x4</label>
+                     <label><input type="checkbox" class="check" name="Vehicle preference" value="Motorcycle"/>Motorcycle</label>
+                  </label>
+               </fieldset>
+               
+               <fieldset>
+                  <label for="Start Point">Start Point</label>
+                  <select id="Start Point">
+                     <option value="Turkmenistan">Turkmenistan</option>
+                     <option value="Uzbekistan">Uzbekistan</option>
+                     <option value="Kyrgyzstan">Kyrgyzstan</option>
+                     <option value="Kazakhstan">Kazakhstan</option>
+                     <option value="Russia">Russia</option>
+                  </select>
+               </fieldset>
+               <fieldset>
+                  <label for="Finish Point">Finish Point</label>
+                  <select id="Finish Point">
+                     <option value="Turkmenistan">Turkmenistan</option>
+                     <option value="Uzbekistan">Uzbekistan</option>
+                     <option value="Kyrgyzstan">Kyrgyzstan</option>
+                     <option value="Kazakhstan">Kazakhstan</option>
+                     <option value="Russia">Russia</option>
+                     <option value="Mongolia">Mongolia</option>
+                  </select>
+               </fieldset>
+               <fieldset>
+                  <label for="Duration">Duration</label>
+                  <input list="Duration" name="Duration">
+                     <datalist id="Duration">
+                        <option value="1week">1 week</option>
+                        <option value="2weeks">Up to 2 weeks</option>
+                        <option value="3weeks">Up to 3 weeks</option>
+                        <option value="4weeks">Up to 4 weeks</option>
+                        <option value="4+weeks">Over 4 weeks</option>
+                     </datalist>
+               </fieldset>
+            </fieldset>
+         </form>
+        
+    </div>
+   </body>
+
+</html>
