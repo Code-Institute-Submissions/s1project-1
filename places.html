@@ -1,12 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Places</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dhurjati" rel="stylesheet">
+	<style type="text/css">
+	.navbar-default {
+            background-color: rgb(255, 191, 0);
+        }
+    .navbar-brand {
+        font-family: 'Frijole', cursive;
+        font-size: 3rem;
+    }
+            body {
+            padding-top:70px;
+		 	background-size: cover;
+		 	color: #ffffff;
+		}
+
+		h1{
+			font-size: 3em;
+			text-align: center;
+		}
+		h2{
+			font-size: 3rem;
+			text-align: center;
+			color: black;
+			font-family: 'Dhurjati', sans-serif;
+			
+		}
+		p{
+			font-size: 2rem;
+		}
+
+		div{
+			border-radius: 20px;
+		}
+		.transparent_Content{
+			background-color: rgb(255, 191, 0);
+			font-family: 'Dhurjati', sans-serif;
+		}
+
+		#container
+		{
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-around;
+			margin-right:auto;
+			margin-left:auto;
+			max-width:960px;
+			font-size: 3rem;
+		}
+		#logo{
+
+			width:100%;
+			font-size: 3rem;
+		}
+
+		#footer{
+			width:100%;
+			margin-top: 50px;
+			padding: 8px 0;
+		}
+		#copyright{
+			text-align: center;
+		}
+
+		.content{
+		    color: Black;
+			flex: 1;
+			min-width: 280px;
+			display: inline-block;
+			width:400px;
+			margin: 10px;
+			padding: 20px;
+			font-size: 3rem;
+			font-family: 'Dhurjati', sans-serif;
+		}
+       
+	</style>
+	</head>
+	<body>
+	   
+	    <nav class="navbar navbar-default navbar-fixed-top">    <!--navbar-fixed-top *now have to style with css to give padding-->
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand"
+                >Central Asia Overlanding</a>
+                <h2>Places to see along the way</h2>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myMenu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <ul id="myMenu" class="nav navbar-right collapse navbar-collapse nav-pills
+            nav-justified">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Places to Visit</a></li>
+                <li><a href="#">Vehicles</a></li>
+                <li><a href="#">Other Overland Ideas</a></li>
+                <li><a href="#">Booking</a></li>
+            </ul>
+        </div>
+    </nav>
+		<div id="logo">
+			<h1>Places to see along the way</h1>
+		</div>
+		<div id="container">
+			<div class="content">
+				 <h2>Sight seeing</h2>
+				 <p>Central Asia has much to offer to the Overland tourer. Whether it be driving through baron landscapes, winding through the beautiful mountains or visiting the old citys along the route of the silk road, The adventure opportunities are endless. Here are a few of our favourite places alog the way. </p>
+			</div>
+			<div class="content transparent_Content">
+				<h2>Turkemenistan</h2>
+				<img class="img-responsive" src="./img/Places/Turkmen/ashga.jpg" alt="ashgabat"/>
+				<p>Turkmenistan's capital city, Asgabat, is a must see. It is known as the city of white marble and it is not difficult to tell why. As you drive through the city, you get to see the huge buildings and facades made out of white marble, you will also notice that all the cars are white too!</p>
+				<img class="img-responsive" src="./img/Places/Turkmen/doortohell.jpg" alt="door2hell"/>
+				<p>Further outside the confines of the cities, deeper into the baron landscape, you can find the Door to hell. It is only accessible via a sandy trail suitable only for 4x4 or Motorbikes. The door to hell was a natural gas field which collapsed into an underground cavern and became a natura gas crater, it is still burning to this day.</p>
+				<img class="img-responsive" src="./img/Places/Turkmen/dth.jpg" alt="door3hell"/>
+			</div>
+			<div class="content transparent_Content">
+				<h2>Uzbekistan</h2>
+				<img class="img-responsive" src="./img/Places/Silk/samarkand.jpg" alt="samarkand"/>
+				<p>Uzbekistan is home to some of the famous cities of the Silk Road, it is an ancient trade route that was used for trading between the east and west. Some of the cities still contain the huge walls and the old architecture and you can still visit the bazaar's. Some of the cities we reccomend visiting are "Khiva", "Bukhara" and the famous "Samarkand". Explore each of the cities and learn about the history behind the Silk Road.</p>
+				<img class="img-responsive" src="./img/Places/Silk/buka.jpg" alt="bukhara"/>
+			</div>
+			<div class="content transparent_Content">
+				<h2>Kyrgyzstan</h2>
+				<img class="img-responsive" src="./img/Places/Kyrg/Kyrg3.jpg" alt="kyrg"/>
+				<p>Kyrgyzstan is a beautiful country, We love spending our journeys climbing and traversing through the winding mountain roads. The mountains are home to some of the most beautiful valley passes and winding hairpin roads with views that can leave you speechless. As far as the eye can see, it is nothing but empty land, mountains and winding roads.</p>
+				<img class="img-responsive" src="./img/Places/Kyrg/Kyrg2.jpg" alt="kyrg2"/>
+			</div>
+			<div class="content transparent_Content">
+				<h2>Kazakhstan</h2>
+				<img class="img-responsive" src="./img/Places/Kazak/Kazak1.jpg" alt="kazak"/>
+				<p>Kazakhstan is also home to beautiful mantainous landscapes along the route. Travel along the sides of the deep mountain valleys and look down below to the ice blue lakes. Lake Kaindy is a must see, it is a small lake which was created as a result of an earthquake. It also has the title of the underwater forest due to the spruce trees that stretch 30m below the water surface and give the appearance of an underwater forest. The Big Almaty Lake is another one to see, It's ice blue colour and surrounding of forestry and mountains creates views like no other.</p>
+				<img class="img-responsive" src="./img/Places/Kazak/Kazak2.jpg" alt="kazak2"/>
+			</div>
+			<div class="content transparent_Content">
+				<h2>Russia</h2>
+				<img class="img-responsive" src="./img/Places/Russia/altai1.jpeg" alt="altai"/>
+				<p>The Altai mountains are our chosen route through Russia. Lovely sweeping mountain roads following the rivers that cut through the deep valleys. Stopping frequently along the way to take in the view is not uncommon along this route. Indulge in some of the historical stops along the way or keep an eye out for the teams of wild horses at the bottom of the valleys by the rivers. </p>
+				<img class="img-responsive" src="./img/Places/Russia/altai2.jpg" alt="altai2"/>
+			</div>
+			<div class="content transparent_Content">
+				<h2>Mongolia</h2>
+				<img class="img-responsive" src="./img/Vehicles/tenere.jpg" alt="tenere"/>
+				<p>Mongolia truly is an awe inspiring country for Overlanding. Roads dont really exist, this only adds to the adventure. Travel through the barron planes, surrounded by snow capped mountains. Huge birds of prey are a common sight flying above you, Wild horses and wild Camels are other regular sightings. You may even see some if the native Mongolians out tending to their animals by their Yurt (Native home). The natives are very friendly and you may even find yourself being invited into the home to indulge is some homemade alcoholic beverage called "Kumis", usually made from fermented milk. At night, you will have another spectacle overhead, The Milky Way. In plain sight, the Milky Way is visable spanning across the sky in the Gobi Desert, you wont see a night sky like this in many places!</p>
+			</div>
+			<div id="footer" class="transparent_Content">
+				<p id="copyright">Back to Home</p>
+			</div>
+
+		</div>
+	</body>
 </html>

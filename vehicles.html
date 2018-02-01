@@ -1,12 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vehicles</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dhurjati" rel="stylesheet">
+	<style type="text/css">
+	.navbar-default {
+            background-color: rgb(255, 191, 0);
+        }
+    .navbar-brand {
+        font-family: 'Frijole', cursive;
+        font-size: 3rem;
+    }
+            body {
+            padding-top:70px;
+		 	background-size: cover;
+		 	color: #ffffff;
+		}
+
+		h1{
+			font-size: 3em;
+			text-align: center;
+		}
+		h2{
+			font-size: 3rem;
+			text-align: center;
+			color: black;
+			font-family: 'Dhurjati', sans-serif;
+			
+		}
+		p{
+			font-size: 2rem;
+		}
+
+		div{
+			border-radius: 20px;
+		}
+		.transparent_Content{
+			background-color: rgb(255, 191, 0);
+			font-family: 'Dhurjati', sans-serif;
+		}
+
+		#container
+		{
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-around;
+			margin-right:auto;
+			margin-left:auto;
+			max-width:960px;
+			font-size: 3rem;
+		}
+		#logo{
+
+			width:100%;
+			font-size: 3rem;
+		}
+
+		#footer{
+			width:100%;
+			margin-top: 50px;
+			padding: 8px 0;
+		}
+		#copyright{
+			text-align: center;
+		}
+
+		.content{
+		    color: Black;
+			flex: 1;
+			min-width: 280px;
+			display: inline-block;
+			width:400px;
+			margin: 10px;
+			padding: 20px;
+			font-size: 3rem;
+			font-family: 'Dhurjati', sans-serif;
+		}
+		
+
+	</style>
+	</head>
+	<body>
+	    
+	    <nav class="navbar navbar-default navbar-fixed-top">    <!--navbar-fixed-top *now have to style with css to give padding-->
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand"
+                >Central Asia Overlanding</a>
+                <h2>Our Vheicles</h2>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myMenu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <ul id="myMenu" class="nav navbar-right collapse navbar-collapse nav-pills
+            nav-justified">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Places to Visit</a></li>
+                <li><a href="#">Vehicles</a></li>
+                <li><a href="#">Other Overland Ideas</a></li>
+                <li><a href="#">Booking</a></li>
+            </ul>
+        </div>
+    </nav>
+		<div id="logo">
+			<h1>Our Vehicles</h1>
+		</div>
+		<div id="container">
+			<div class="content">
+				 <h2>Book Your Vehicle</h2>
+				 <p>Our fleet consists of 21 customised 4x4 Jeeps and 21 modified Motorcycles. Have a look below at what models are available and which may be most suitable for you. All of our vehicles have had modifications made which will enhance your travels as well as add comfort and support. </p>
+			</div>
+			<div class="content transparent_Content">
+				<h2>Toyota Landcruiser</h2>
+				<img class="img-responsive" src="./img/Vehicles/land-cruiser.jpg" alt="landcruiser"/>
+				<p>The Toyota Landcruiser is a popular choice among overland adventurers, It's reputation matches it's ability on and off the road. Our Landcruisers come with the standard roof mounted tents, Raised suspension and offroad tyres.</p>
+			</div>
+			<div class="content transparent_Content">
+				<h2>Landrover Defender</h2>
+				<img class="img-responsive" src="./img/Vehicles/landy-defender.jpg" alt="defender"/>
+				<p>The classic, Our fleet of defenders have been modified to overcome any terrain thrown at them. They too have been fitted with roof mounted tent, suspension kits and all other Overland essentials.</p>
+			</div>
+			<div class="content transparent_Content">
+				<h2>Landrover Discovery</h2>
+				<img class="img-responsive" src="./img/Vehicles/landy-disco.jpg" alt="disco"/>
+				<p>The Disco's, an overlander's favourite. Kitted out to the brim and ready to cross country, our fleet of Discovery jeeps are in perfect condition and cater to all the needs of the overlander from beginner to seasoned vet.</p>
+			</div>
+			<div class="content transparent_Content">
+				<h2>BMW GS1200</h2>
+				<img class="img-responsive" src="./img/Vehicles/BMW.jpg" alt="BMW"/>
+				<p>Our GS1200's have all the newest  bits and pieces, we also include the travel boxes for storage. Sat-Nav, heated seat and grips, extended wind visor and enduro tyres, The bikes are ready to jump on and let rip.</p>
+			</div>
+			<div class="content transparent_Content">
+				<h2>KTM Adventure R 1190</h2>
+				<img class="img-responsive" src="./img/Vehicles/KTM.jpg" alt="KTM"/>
+				<p>The hooligans favourite. Equipped with all overland necessities, the Adventure R handles like a motocross bike across all terrain. Again, all of our bikes have been modified specifically to endure Overland tours of all lengths and difficulties.</p>
+			</div>
+			<div class="content transparent_Content">
+				<h2>Yamaha Super Tenere</h2>
+				<img class="img-responsive" src="./img/Vehicles/tenere.jpg" alt="tenere"/>
+				<p>The super Tenere is a classic among motorcycle tourers that enjoy their rides. It is well capapble of handling any terrain you throw at it and it has everything you need to keep you going.</p>
+			</div>
+			<div id="footer" class="transparent_Content">
+				<p id="copyright">Back to Home</p>
+			</div>
+
+		</div>
+	</body>
 </html>
