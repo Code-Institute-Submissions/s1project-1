@@ -3,15 +3,29 @@
    <head>
    <meta charset="UTF-8">
       <title>Form</title>
-      <link href="https://fonts.googleapis.com/css?family=Keania+One" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+       <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Dhurjati" rel="stylesheet">
    
       <!--
          Form with HTML5 tags and basic CSS
       -->
       <style type="text/css">
+      
+      .navbar-default {
+            background-color: rgb(255, 191, 0);
+        }
+       .navbar-brand {
+        font-family: 'Frijole', cursive;
+        font-size: 3rem;
+       }
+       .navbar-header {
+        padding-bottom: 30px;
+       }
 
       body{
-         font-family: 'Keania One', cursive;
+         font-family: 'Dhurjati', sans-serif;
+         font-size: 20px;
       }
          #container{
             width: 550px;
@@ -36,6 +50,9 @@
             clear: both;
 
          }
+         form {
+            padding-top: 200px;
+         }
          input{
             width: 200px;
             border-radius: 5px;
@@ -52,7 +69,7 @@
          }
 
          fieldset{
-            width: 450px;
+            width: 500px;
             border: 1px solid #999;
             border-radius: 20px;
             clear: both;
@@ -72,8 +89,31 @@
       </style>
    </head>
    <body>
+      <nav class="navbar navbar-default navbar-fixed-top">    <!--navbar-fixed-top *now have to style with css to give padding-->
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand"
+                >Central Asia Overlanding</a>
+                <h2>Other Overland Ideas</h2>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myMenu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <ul id="myMenu" class="nav navbar-right collapse navbar-collapse nav-pills
+            nav-justified">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./places.html">Places to Visit</a></li>
+                <li><a href="./vehicles.html">Vehicles</a></li>
+                <li><a href="./others.html">Other Overland Ideas</a></li>
+                <li><a href="./bookingForm.html">Booking</a></li>
+            </ul>
+        </div>
+    </nav>
       
       <div id="container">
+         
          <form>
             <fieldset>
                <fieldset>
@@ -97,13 +137,13 @@
                         <input id="submit" type="submit" name="submit"/>
                </fieldset>
                <fieldset id="Gender">
-                        <label for="Gender" class="radio">Gender</label>
+                        <label for="Gender" class="radio">Gender</label><br/>
                         <label><input type="radio" name="Gender" value="Male">Male</label>
                         <label><input type="radio" name="Gender" value="Female">Female</label>
                         <label><input type="radio" name="Gender" value="Other">Other</label>
                </fieldset>
                <fieldset id="Vehicle preference">
-                  <label for="Would you like" class="checkbox">Vehicle preference
+                  <label for="Would you like" class="checkbox">Vehicle preference</label><br/>
                      <label><input type="checkbox" class="check" name="Vehicle preference" value="4x4"/>4x4</label>
                      <label><input type="checkbox" class="check" name="Vehicle preference" value="Motorcycle"/>Motorcycle</label>
                   </label>
@@ -134,11 +174,11 @@
                   <label for="Duration">Duration</label>
                   <input list="Duration" name="Duration">
                      <datalist id="Duration">
-                        <option value="1week">1 week</option>
-                        <option value="2weeks">Up to 2 weeks</option>
-                        <option value="3weeks">Up to 3 weeks</option>
-                        <option value="4weeks">Up to 4 weeks</option>
-                        <option value="4+weeks">Over 4 weeks</option>
+                        <option value="1 week">1 week</option>
+                        <option value="2 weeks">Up to 2 weeks</option>
+                        <option value="3 weeks">Up to 3 weeks</option>
+                        <option value="4 weeks">Up to 4 weeks</option>
+                        <option value="4+ weeks">Over 4 weeks</option>
                      </datalist>
                </fieldset>
             </fieldset>
